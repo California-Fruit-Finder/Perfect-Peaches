@@ -2,8 +2,8 @@
   "openapi": "3.1.0",
   "info": {
     "version": "1.0.0",
-    "title": "Single Path",
-    "description": "This is a slimmed down single path version of the Petstore definition."
+    "title": "Pick local peaches",
+    "description": "This is a database of all U-pick peach stands in California."
   },
   "servers": [
     {
@@ -11,7 +11,7 @@
     }
   ],
   "paths": {
-    "/pet/{id}": {
+    "/picker/{id}": {
       "parameters": [
         {
           "name": "id",
@@ -23,9 +23,9 @@
         }
       ],
       "put": {
-        "tags": ["pet"],
-        "summary": "Update a pet",
-        "description": "This operation will update a pet in the database.",
+        "tags": ["picker"],
+        "summary": "Locate a farm",
+        "description": "This operation will fetch all u-pick farms within a 50 mile radius and show hours and availability.",
         "responses": {
           "400": {
             "description": "Invalid id value"
@@ -38,9 +38,9 @@
         ]
       },
       "get": {
-        "tags": ["pet"],
-        "summary": "Find a pet",
-        "description": "This operation will find a pet in the database.",
+        "tags": ["picker"],
+        "summary": "Fetch directions",
+        "description": "This operation will give walking and driving directions from farm to your location.",
         "responses": {
           "400": {
             "description": "Invalid status value"
