@@ -11,7 +11,7 @@
     }
   ],
   "paths": {
-    "/pet/{id}": {
+    "/peaches/{id}": {
       "parameters": [
         {
           "name": "id",
@@ -23,7 +23,7 @@
         }
       ],
       "put": {
-        "tags": ["pet"],
+        "tags": ["peaches"],
         "summary": "Find an open stand",
         "description": "This operation will source all open peach farm stands in the database.",
         "responses": {
@@ -38,9 +38,9 @@
         ]
       },
       "get": {
-        "tags": ["pet"],
-        "summary": "Find a pet",
-        "description": "This operation will find a pet in the database.",
+        "tags": ["peaches"],
+        "summary": "Show location and hours",
+        "description": "This operation will source the location and hours of farm stands and show which are open.",
         "responses": {
           "400": {
             "description": "Invalid status value"
