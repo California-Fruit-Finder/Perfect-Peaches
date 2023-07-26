@@ -2,8 +2,8 @@
   "openapi": "3.1.0",
   "info": {
     "version": "1.0.0",
-    "title": "Single Path",
-    "description": "This is a slimmed down single path version of the Petstore definition."
+    "title": "Farm to Basket Peaches",
+    "description": "Aggregates all farmstands across California that are selling peaches."
   },
   "servers": [
     {
@@ -24,8 +24,8 @@
       ],
       "put": {
         "tags": ["pet"],
-        "summary": "Update a pet",
-        "description": "This operation will update a pet in the database.",
+        "summary": "Find an open stand",
+        "description": "This operation will source all open peach farm stands in the database.",
         "responses": {
           "400": {
             "description": "Invalid id value"
